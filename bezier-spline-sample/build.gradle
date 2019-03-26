@@ -17,10 +17,20 @@ android {
         targetSdkVersion androidTargetSdkVersion
     }
 
+    signingConfigs {
+        sample configureKeystore('sample')
+    }
+
     buildTypes {
+        debug {
+            signingConfig signingConfigs.sample
+        }
+
         release {
-            minifyEnabled true
+            minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+            signingConfig signingConfigs.sample
         }
     }
 }
@@ -34,4 +44,17 @@ dependencies {
     implementation dep.libRecyclerView
 
     implementation project(':bezier-spline')
+}
+
+def configureKeystore(name) {
+    def dir = rootProject.file('keystore')
+    def properties = new Properties()
+    properties.load(new FileInputStream(new File(dir, "${name}.properties")))
+
+    return {
+        storeFile = new File(dir, "${name}.keystore")
+        storePassword = properties['KEYSTORE_PASSWORD']
+        keyAlias = properties['KEY_ALIAS']
+        keyPassword = properties['KEY_PASSWORD']
+    }
 }

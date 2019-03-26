@@ -2,7 +2,7 @@
 
 [Smooth Bézier Spline Through Prescribed Points](https://www.particleincell.com/2012/bezier-splines/) for Android Platform.
 
-Helps to simulate curves such as `Sine Curve`, `Wave` etc...
+Helps to simulate curves such as `Sine Curve`, `Wave` etc... [Here](https://github.com/xujiaao/bezier-spline/releases/latest) is a Sample Application.
 
 ![Wave](docs/wave.gif)
 
@@ -15,7 +15,6 @@ Copy [BezierSpline.java](bezier-spline/src/main/java/com/xujiaao/android/bezier/
 private final Path mPath = new Path();
 private final Paint mPaint = new Paint();
 private final BezierSpline mBezierSpline = new BezierSpline(20);
-...
 
 @Override
 protected void onDraw(Canvas canvas) {
