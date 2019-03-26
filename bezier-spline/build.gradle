@@ -37,7 +37,7 @@ ext.publicationConfig = [
         bintrayName                  : 'bezier-spline',
         bintrayLicenses              : ['MIT'],
         bintrayGithubRepo            : 'xujiaao/BezierSpline',
-        bintrayGithubReleaseNotesFile: "${rootProject.relativePath(project.projectDir)}/CHANGELOG.md",
+        bintrayGithubReleaseNotesFile: "CHANGELOG.md",
 ]
 
 apply from: rootProject.file('gradle/gradle-bintray-publish.gradle')
