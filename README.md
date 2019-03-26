@@ -4,8 +4,9 @@
 
 Helps to simulate curves such as `Sine Curve`, `Wave` etc... [Here](https://github.com/xujiaao/BezierSpline/releases/latest) is a Sample Application.
 
-![Wave](docs/wave.gif)
+![Screenshot - Wave](docs/wave.gif)
 
+![Screenshot - Knots](docs/knots.jpg)
 
 ## Usage
 
