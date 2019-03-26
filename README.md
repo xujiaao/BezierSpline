@@ -4,7 +4,7 @@
 
 **[Smooth Bézier Spline Through Prescribed Points](https://www.particleincell.com/2012/bezier-splines/) for Android Platform.**
 
-Helps to simulate curves such as `Sine Curve`, `Wave` etc... **[Here](https://github.com/xujiaao/BezierSpline/releases/latest) is a Sample Application.**
+Helps to simulate curves such as `Sine Curve`, `Wave` etc... [Here](https://github.com/xujiaao/BezierSpline/releases/latest) is a Sample Application.
 
 ![Screenshot - Wave](docs/wave.gif)  ![Screenshot - Knots](docs/knots.jpg)
 
