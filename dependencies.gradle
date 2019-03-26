@@ -17,6 +17,7 @@ ext {
              */
             pluginAndroid       : 'com.android.tools.build:gradle:3.2.1',
             pluginKotlin        : "org.jetbrains.kotlin:kotlin-gradle-plugin:$version_kotlin",
+            pluginBintray       : 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.7.3',
 
             /**
              * Libraries (Android Support).

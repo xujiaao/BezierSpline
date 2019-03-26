@@ -24,3 +24,20 @@ dependencies {
 
     compileOnly dep.libSupportAnnotation
 }
+
+// -------------------------------------------------------------------------------------------------
+// Publishing
+// -------------------------------------------------------------------------------------------------
+
+ext.publicationConfig = [
+        artifactGroup                : 'com.xujiaao.android',
+        artifactName                 : 'bezier-spline',
+        artifactVersion              : '1.0.0',
+        bintrayRepo                  : 'android',
+        bintrayName                  : 'bezier-spline',
+        bintrayLicenses              : ['MIT'],
+        bintrayGithubRepo            : 'xujiaao/BezierSpline',
+        bintrayGithubReleaseNotesFile: "${rootProject.relativePath(project.projectDir)}/CHANGELOG.md",
+]
+
+apply from: rootProject.file('gradle/gradle-bintray-publish.gradle')
